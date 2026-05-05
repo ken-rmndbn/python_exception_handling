@@ -12,4 +12,6 @@ class MathOperations:
         if b == 0:
             raise ZeroDivisionError("Cannot divide number by zero!")
         return a / b
+
+class SimpleAppCalculator(MathOperations):
     
