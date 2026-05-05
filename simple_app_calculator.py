@@ -76,3 +76,7 @@ class SimpleAppCalculator(MathOperations):
                     return
                 else:
                     print(f"{self.RED}Please answer with yes or no.{self.RESET}")
+
+if __name__ == "__main__":
+    calculator_app = SimpleAppCalculator()
+    calculator_app.run()
