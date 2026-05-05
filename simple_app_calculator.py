@@ -35,3 +35,10 @@ class SimpleAppCalculator(MathOperations):
             print("2. Subtraction (-)")
             print("3. Multiplication (*)")
             print("4. Division (/)")
+
+            user_choice = input(f"{self.YELLOW}Enter choice (1/2/3/4): {self.RESET}")
+
+            if user_choice in ("1", "2", "3", "4"):
+                number_1 = self.get_number("Enter First Number: ")
+                number_2 = self.get_number("Enter Second Number: ")
+                
