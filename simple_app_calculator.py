@@ -41,4 +41,24 @@ class SimpleAppCalculator(MathOperations):
             if user_choice in ("1", "2", "3", "4"):
                 number_1 = self.get_number("Enter First Number: ")
                 number_2 = self.get_number("Enter Second Number: ")
-                
+
+                try:
+                    result = 0
+                    operation_symbol = ""
+
+                    if user_choice == "1":
+                        result = self.add(number_1, number_2)
+                        operation_symbol = "+"
+                    elif user_choice == "2":
+                        result = self.subtract(number_1, number_2)
+                        operation_symbol = "-"
+                    elif user_choice == "3":
+                        result = self.multiply(number_1, number_2)
+                        operation_symbol = "*"
+                    elif user_choice == "4":
+                        result = self.divide(number_1, number_2)
+                        operation_symbol = "/"
+
+                    print(f"{self.BLUE}Result: {number_1}{operation_symbol}{number_2} = {result}{self.RESET}")
+
+                except
