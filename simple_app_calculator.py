@@ -18,4 +18,10 @@ class SimpleAppCalculator(MathOperations):
     YELLOW = "\033[93m"
     RED = "\033[91m"
     RESET = "\033[0M"
-    
+
+    def get_number(self, prompt):
+        while True:
+            try:
+                return float(input(f"{self.YELLOW}{prompt}{self.RESET}"))
+            except ValueError:
+                print(f"{self.RED}Invalid input! Please enter a number.{self.RESET}")
