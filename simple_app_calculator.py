@@ -25,3 +25,13 @@ class SimpleAppCalculator(MathOperations):
                 return float(input(f"{self.YELLOW}{prompt}{self.RESET}"))
             except ValueError:
                 print(f"{self.RED}Invalid input! Please enter a number.{self.RESET}")
+
+    def run(self):
+        print(f"{self.YELLOW}Simple App Calculator{self.RESET}")
+
+        while True:
+            print("\nChoose an Operation:")
+            print("1. Addition (+)")
+            print("2. Subtraction (-)")
+            print("3. Multiplication (*)")
+            print("4. Division (/)")
