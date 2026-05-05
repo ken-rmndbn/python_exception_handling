@@ -65,3 +65,14 @@ class SimpleAppCalculator(MathOperations):
                     print(f"{self.RED}Error: {e}{self.RESET}")
             else:
                 print(f"{self.RED}Invalid Choice! Please select 1, 2, 3, or 4.{self.RESET}")
+
+            while True:
+                try_again = input(f"\n{self.YELLOW}Do you want to try again? (yes/no): {self.RESET}").strip().lower()
+
+                if try_again in ("yes", "y"):
+                    break
+                elif try_again in ("no", "y"):
+                    print(f"{self.YELLOW}Thank you!{self.RESET}")
+                    return
+                else:
+                    print(f"{self.RED}Please answer with yes or no.{self.RESET}")
