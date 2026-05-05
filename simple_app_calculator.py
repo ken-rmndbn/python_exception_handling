@@ -61,4 +61,7 @@ class SimpleAppCalculator(MathOperations):
 
                     print(f"{self.BLUE}Result: {number_1}{operation_symbol}{number_2} = {result}{self.RESET}")
 
-                except
+                except ZeroDivisionError as e:
+                    print(f"{self.RED}Error: {e}{self.RESET}")
+            else:
+                print(f"{self.RED}Invalid Choice! Please select 1, 2, 3, or 4.{self.RESET}")
