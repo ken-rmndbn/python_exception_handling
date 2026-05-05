@@ -1,0 +1,2 @@
+class MathOperations:
+    def
